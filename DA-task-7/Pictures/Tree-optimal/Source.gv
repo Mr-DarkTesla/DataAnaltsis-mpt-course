@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<temp &le; 0.464<br/>absolute_error = 1638.654<br/>samples = 437<br/>value = 4521.0>, fillcolor="#f1bd98"] ;
+1 [label=<temp &le; 0.319<br/>absolute_error = 1291.374<br/>samples = 198<br/>value = 3165.5>, fillcolor="#f9e0ce"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<season_4 &le; 0.5<br/>absolute_error = 868.696<br/>samples = 92<br/>value = 2085.0>, fillcolor="#fefbf9"] ;
+1 -> 2 ;
+3 [label=<absolute_error = 617.149<br/>samples = 74<br/>value = 1930.5>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label=<absolute_error = 1042.611<br/>samples = 18<br/>value = 3617.0>, fillcolor="#f6d4bc"] ;
+2 -> 4 ;
+5 [label=<hum &le; 0.679<br/>absolute_error = 1197.925<br/>samples = 106<br/>value = 4051.0>, fillcolor="#f4c9aa"] ;
+1 -> 5 ;
+6 [label=<absolute_error = 1092.525<br/>samples = 59<br/>value = 4363.0>, fillcolor="#f2c19e"] ;
+5 -> 6 ;
+7 [label=<absolute_error = 1082.787<br/>samples = 47<br/>value = 3351.0>, fillcolor="#f8dbc6"] ;
+5 -> 7 ;
+8 [label=<hum &le; 0.742<br/>absolute_error = 1280.205<br/>samples = 239<br/>value = 5740.0>, fillcolor="#eb9e67"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<windspeed &le; 0.154<br/>absolute_error = 1191.246<br/>samples = 187<br/>value = 6140.0>, fillcolor="#e99457"] ;
+8 -> 9 ;
+10 [label=<absolute_error = 1101.359<br/>samples = 78<br/>value = 6890.0>, fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label=<absolute_error = 1135.128<br/>samples = 109<br/>value = 5698.0>, fillcolor="#eb9f69"] ;
+9 -> 11 ;
+12 [label=<windspeed &le; 0.181<br/>absolute_error = 1141.923<br/>samples = 52<br/>value = 4602.5>, fillcolor="#f1bb94"] ;
+8 -> 12 ;
+13 [label=<absolute_error = 1075.6<br/>samples = 35<br/>value = 5115.0>, fillcolor="#eeae80"] ;
+12 -> 13 ;
+14 [label=<absolute_error = 842.059<br/>samples = 17<br/>value = 4040.0>, fillcolor="#f4c9ab"] ;
+12 -> 14 ;
+}
